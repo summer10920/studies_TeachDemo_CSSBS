@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "標楷體";
+}
+
+body.main {
+  width: 1024px;
+  padding: 0 11px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+body > *:not(aside):not(section),
+aside > *,
+section > * {
+  border: solid 1px #7777;
+}
+
+header.top {
+  flex-basis: 1000px;
+  height: 65px;
+}
+
+footer.footer {
+  flex-basis: 1000px;
+  height: 20px;
+  color:#000;
+  font-size: 16px;
+}
+
+aside {
+  flex-basis: calc(215px);
+  height: calc(768px - 65px - 20px);
+  display: flex;
+  flex-flow: column nowrap;
+}
+aside > nav.menu {
+  flex-basis: calc(100% - 25px);
+}
+aside > footer.update {
+  flex-basis: 25px;
+}
+
+section {
+  flex-basis: calc(1000px - 215px);
+  display: flex;
+  flex-flow: column nowrap;
+}
+section > header.marquee {
+  flex-basis: 29px;
+  padding: 0 calc((100% - 770px - 2px) / 2);
+
+  font-size: 24px;
+  color: #0000ff;
+  line-height: 29px;
+  font-family: "標楷體";
+}
+section > main.content {
+  flex-basis: calc(100% - 29px);
+  padding: calc((100% - 770px - 2px) / 2);
+}
+
+header.top > a {
+  display: block;
+}
+
+nav.menu > header {
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: underline;
+  color:#f0f;
+  margin: 20px 0;
+}
+nav.menu>a{
+  display: inline-block;
+  background: url('menu1.png') no-repeat;
+  width: 200px;
+  height:35px;
+  line-height: 35px;
+  color:#000;
+  font-size: 16px;
+}
+nav.menu>a:hover{
+  background: url('menu2.png');
+}
+
+.update{
+  font-size: 16px;
+}
+
+.content>iframe{
+  width:100%;
+  height:100%;
+}

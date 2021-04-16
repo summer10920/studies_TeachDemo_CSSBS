@@ -1,0 +1,172 @@
+body {
+  font-family: 'Noto Sans TC', 'Open Sans', Helvetica, Arial;
+  background: #eee;
+  /* 白底不要太刺眼 */
+}
+
+/**********lokiSlider***********/
+#lokiSlider img {
+  object-fit: cover;
+  filter: grayscale(50%);
+}
+
+#lokiSlider .carousel-caption {
+  text-shadow: #333 0.3rem 0.3rem 0.5rem;
+}
+
+#lokiSlider .carousel-indicators>button {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  border: 10px solid transparent;
+}
+
+/************lokiFooter**********/
+footer>.position-fixed {
+  right: 5vh;
+  bottom: 5vh;
+  z-index: 999;
+}
+
+footer>.position-fixed>a {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate(0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate(0, -30px);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate(0, -15px);
+  }
+
+  90% {
+    transform: translate(0, -4px);
+  }
+}
+
+/**********lokiRoom************/
+#lokiRoom nav>.nav-link {
+  flex: 0 1 15%;
+  box-shadow: 1px -1px 5px 0px #ccc;
+  color: #664d03;
+  background-color: #fff3cd;
+  border: 0;
+}
+
+#lokiRoom nav>.nav-link.active {
+  background-color: #ffc107;
+  color: #fff3cd;
+}
+
+#lokiRoom nav.nav-tabs,
+#lokiRoom nav>.nav-link {
+  border-bottom: 1px solid #ffc107;
+}
+
+#lokiRoom>.tab-content>.row.active {
+  display: flex;
+}
+
+#roomPrice th,
+#roomPrice td {
+  vertical-align: middle;
+}
+
+#roomPrice th {
+  width: 25%;
+}
+
+/***********lokiFacility*********/
+@media (min-width: 992px) {
+  #lokiFacility li.col-lg-6:nth-of-type(even) img {
+    order: 1;
+  }
+}
+
+#lokiFacility {
+  background:
+    url("/media/bgfac.jpg"),
+    radial-gradient(circle, #777 30%, #ccc 70%),
+    linear-gradient(to right, #999, #444);
+  background-blend-mode: multiply, screen;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  text-shadow: #333 0.3rem 0.3rem 0.5rem;
+  /* https://codepen.io/danwilson/pen/dqZvmx */
+}
+
+/***************lokiFood***********/
+#lokiFood .accordion-button:not(.collapsed) {
+  background: #ffc107;
+  color: white !important;
+}
+
+#lokiFood .accordion-button:focus {
+  border: #ffecb5;
+  box-shadow: 0 0 0 0.4rem #ffca3080;
+}
+
+#lokiFood small {
+  transform: rotate(-15deg) translate(-25%, -25%);
+  z-index: 999;
+}
+
+/************lokiTrans*********/
+#lokiTrans iframe {
+  filter: grayscale(0.75) brightness(0.5);
+}
+
+/***************navBar*********/
+.nav-link {
+  transition: 1s ease;
+}
+
+
+/***************menu JS********/
+header a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #fff;
+  margin: 5px 0;
+  transition: 1s ease;
+}
+
+header a.active:after {
+  width: 100%;
+}
+
+:root {
+  scroll-behavior: auto;
+}
+
+#lokiArrow {
+  opacity: 0;
+  transition: 500ms ease;
+}
+
+#lokiArrow.shown {
+  opacity: 1;
+}
+
+#lokiMenu {
+  transition: 1s ease;
+}

@@ -100,7 +100,7 @@ footer>.position-fixed>a {
 
 #lokiFacility {
   background:
-    url("/media/bgfac.jpg"),
+    url("../media/bgfac.jpg"),
     radial-gradient(circle, #777 30%, #ccc 70%),
     linear-gradient(to right, #999, #444);
   background-blend-mode: multiply, screen;

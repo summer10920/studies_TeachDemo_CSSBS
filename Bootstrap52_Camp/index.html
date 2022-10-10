@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>泰山溫泉度假營地 - 露營區</title>
+  <!-- favicon.ico -->
+  <link
+    rel="shortcut icon"
+    href="media/favicon.ico"
+    type="image/x-icon"
+  >
+  <!-- google font -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap"
+    rel="stylesheet"
+  >
+  <!-- bootstrap -->
+  <link
+    rel="stylesheet"
+    href="plugins/bootstrap.min.css"
+  >
+  <script src="plugins/bootstrap.bundle.min.js"></script>
+  <!-- fontawsome -->
+  <script
+    src="https://kit.fontawesome.com/fa483230ea.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- masonry -->
+  <script src="plugins/masonry.pkgd.min.js"></script>
+  <!-- custom -->
+  <link
+    rel="stylesheet"
+    href="plugins/style.css"
+  >
+</head>
+
+<body>
+  <!-- 測試廣告輪播判斷 Bootstrap 是否正常運行 -->
+  <section
+    id="lokiSlider"
+    class="carousel slide carousel-fade"
+    data-bs-interval="3000"
+    data-bs-ride="false"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#lokiSlider"
+        data-bs-slide-to="0"
+        class="active"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#lokiSlider"
+        data-bs-slide-to="1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#lokiSlider"
+        data-bs-slide-to="2"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item vh-100 active">
+        <img
+          src="https://picsum.photos/1920/1080/?random=10"
+          class="d-block h-100 w-100"
+        >
+        <div class="carousel-caption d-flex justify-content-center align-items-center flex-column top-0 bottom-0">
+          <h2 class="display-2">First slide label</h2>
+          <p class="d-none d-md-block">Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item vh-100">
+        <img
+          src="https://picsum.photos/1920/1080/?random=11"
+          class="d-block h-100 w-100"
+        >
+        <div class="carousel-caption d-flex justify-content-center align-items-center flex-column top-0 bottom-0">
+          <h2 class="display-2">Second slide label</h2>
+          <p class="d-none d-md-block">Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item vh-100">
+        <img
+          src="https://picsum.photos/1920/1080/?random=12"
+          class="d-block h-100 w-100"
+        >
+        <div class="carousel-caption d-flex justify-content-center align-items-center flex-column top-0 bottom-0">
+          <h2 class="display-2">Third slide label</h2>
+          <p class="d-none d-md-block">Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev w-auto"
+      type="button"
+      data-bs-target="#lokiSlider"
+      data-bs-slide="prev"
+    >
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+    <button
+      class="carousel-control-next w-auto"
+      type="button"
+      data-bs-target="#lokiSlider"
+      data-bs-slide="next"
+    >
+      <i class="fa-solid fa-angle-right"></i>
+    </button>
+  </section>
+  <section
+    id="lokiPallet"
+    class="container"
+  >
+    <header class="h2 my-5 border-start border-5 border-secondary ps-3">營位介紹</header>
+    <article class="row row-cols-1 row-cols-md-2 flex-row-reverse g-5 gx-md-5 gy-md-0 overflow-hidden">
+      <div class="col">
+        <div class="card text-bg-dark overflow-hidden border-0 shadow">
+          <img
+            src="https://fakeimg.pl/400x300"
+            class="card-img"
+          >
+          <div class="card-img-overlay text-center bg-opacity-50 bg-dark d-flex flex-column justify-content-center">
+            <h3 class="card-title text-warning fw-bolder">Card title</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <p class="card-text">$price</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark overflow-hidden border-0 shadow">
+          <img
+            src="https://fakeimg.pl/400x300"
+            class="card-img"
+          >
+          <div class="card-img-overlay text-center bg-opacity-50 bg-dark d-flex flex-column justify-content-center">
+            <h3 class="card-title text-warning fw-bolder">Card title</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <p class="card-text">$price</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark overflow-hidden border-0 shadow">
+          <img
+            src="https://fakeimg.pl/400x300"
+            class="card-img"
+          >
+          <div class="card-img-overlay text-center bg-opacity-50 bg-dark d-flex flex-column justify-content-center">
+            <h3 class="card-title text-warning fw-bolder">Card title</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <p class="card-text">$price</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-dark overflow-hidden border-0 shadow">
+          <img
+            src="https://fakeimg.pl/400x300"
+            class="card-img"
+          >
+          <div class="card-img-overlay text-center bg-opacity-50 bg-dark d-flex flex-column justify-content-center">
+            <h3 class="card-title text-warning fw-bolder">Card title</h3>
+            <hr>
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <p class="card-text">$price</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section
+    id="lokiPark"
+    class="overflow-hidden container-fluid"
+  >
+    <header class="my-5 container">
+      <h2 class="border-start border-5 border-secondary ps-3">探索體驗</h2>
+      <div class="text-center w-75 mx-auto py-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+        neque magnam totam ab doloremque dolore voluptatum quaerat quos? Commodi labore similique veniam nemo nisi saepe
+        dolorem aperiam, dignissimos ipsam. Suscipit! </div>
+    </header>
+    <article class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-2 g-md-0">
+      <div class="col">
+        <img
+          src="https://fakeimg.pl/600x400"
+          class="card-img"
+        >
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title text-bg-warning opacity-75 rounded-pill px-3 py-2">Lorem, ipsum dolor.</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img
+          src="https://fakeimg.pl/600x800"
+          class="card-img"
+        >
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title text-bg-warning opacity-75 rounded-pill px-3 py-2">Lorem, ipsum dolor.</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img
+          src="https://fakeimg.pl/1200x800"
+          class="card-img"
+        >
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title text-bg-warning opacity-75 rounded-pill px-3 py-2">Lorem, ipsum dolor.</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img
+          src="https://fakeimg.pl/300x400"
+          class="card-img"
+        >
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title text-bg-warning opacity-75 rounded-pill px-3 py-2">Lorem, ipsum dolor.</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img
+          src="https://fakeimg.pl/600x800"
+          class="card-img"
+        >
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title text-bg-warning opacity-75 rounded-pill px-3 py-2">Lorem, ipsum dolor.</h5>
+        </div>
+      </div>
+      <div class="col">
+        <img
+          src="https://fakeimg.pl/600x400"
+          class="card-img"
+        >
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <h5 class="card-title text-bg-warning opacity-75 rounded-pill px-3 py-2">Lorem, ipsum dolor.</h5>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section
+    id="lokiService"
+    class="overflow-hidden text-white"
+  >
+    <header class="container h2 my-5 border-start border-5 border-white ps-3">遊客服務</header>
+    <article class="container">
+      <div class="row row-cols-1 row-cols-md-3 gy-3">
+        <div class="col">
+          <div class="card h-100 text-bg-dark rounded-0 shadow-lg py-3">
+            <div class="card-header text-center">
+              <h3 class="card-title">Card title</h3>
+              <img
+                src="https://picsum.photos/150/150/?random=10"
+                class="rounded-circle border border-secondary border-3 m-3"
+              >
+            </div>
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-info">Card subtitle</h6>
+              <ul class="ps-4">
+                <li class="py-1 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fw-bold">Subheading</div> Content for list item
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 200</span>
+                </li>
+                <li class="py-1 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fw-bold">Subheading</div> Content for list item
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 200</span>
+                </li>
+                <li class="py-1 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fw-bold">Subheading</div> Content for list item
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 200</span>
+                </li>
+                <li class="py-1 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fw-bold">Subheading</div> Content for list item
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 200</span>
+                </li>
+                <li class="py-1 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fw-bold">Subheading</div> Content for list item
+                  </div>
+                  <span class="badge bg-info rounded-pill">NT 200</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-bg-dark rounded-0 shadow-lg py-3">
+            <div class="card-header text-center">
+              <h3 class="card-title">Card title</h3>
+              <img
+                src="https://picsum.photos/150/150/?random=10"
+                class="rounded-circle border border-secondary border-3 m-3"
+              >
+            </div>
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-warning d-flex justify-content-between align-items-start"> Card
+                subtitle <span class="badge bg-warning rounded-pill">NT 200</span>
+              </h6>
+              <p class="ps-4">Some quick example text to build on the card title and make up the bulk of the card's
+                content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis praesentium cum excepturi
+                quis ut sequi ipsam, delectus nulla suscipit nostrum, magnam saepe cupiditate eum accusantium, rerum
+                fugit quas aliquid repudiandae.</p>
+              <h6 class="card-subtitle mb-2 text-warning d-flex justify-content-between align-items-start"> Card
+                subtitle <span class="badge bg-warning rounded-pill">NT 200</span>
+              </h6>
+              <p class="ps-4">Some quick example text to build on the card title and make up the bulk of the card's
+                content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis praesentium cum excepturi
+                quis ut sequi ipsam, delectus nulla suscipit nostrum, magnam saepe cupiditate eum accusantium, rerum
+                fugit quas aliquid repudiandae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-bg-dark rounded-0 shadow-lg py-3">
+            <div class="card-header text-center">
+              <h3 class="card-title">Card title</h3>
+              <img
+                src="https://picsum.photos/150/150/?random=10"
+                class="rounded-circle border border-secondary border-3 m-3"
+              >
+            </div>
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-success d-flex justify-content-between align-items-start"> Card
+                subtitle <span class="badge bg-success rounded-pill">NT 200</span>
+              </h6>
+              <ul class="list-group px-4 mb-3">
+                <li class="py-1"> Content for list item </li>
+                <li class="py-1"> Content for list item </li>
+                <li class="py-1"> Content for list item </li>
+                <li class="py-1"> Content for list item </li>
+              </ul>
+              <h6 class="card-subtitle mb-2 text-success d-flex justify-content-between align-items-start"> Card
+                subtitle <span class="badge bg-success rounded-pill">NT 200</span>
+              </h6>
+              <ul class="list-group px-4 mb-3">
+                <li class="py-1"> Content for list item </li>
+                <li class="py-1"> Content for list item </li>
+                <li class="py-1"> Content for list item </li>
+                <li class="py-1"> Content for list item </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section
+    id="lokiRule"
+    class="container"
+  >
+    <header class="h2 my-5 border-start border-5 border-secondary ps-3">營區守則</header>
+    <article class="row row-cols-1 row-cols-md-2 flex-row-reverse gy-3">
+      <div class="col">
+        <img
+          src="https://picsum.photos/800/600/?random=10"
+          class="img-thumbnail img-fluid p-2"
+        >
+      </div>
+      <div
+        class="accordion col accordion-flush"
+        id="lokiAccordion"
+      >
+        <div class="accordion-item my-3 overflow-auto rounded-5 shadow-sm">
+          <h2
+            class="accordion-header accordion-button btn"
+            data-bs-toggle="collapse"
+            data-bs-target="#lokiItem1"
+          ><i class="fa-regular fa-circle-question me-2"></i>Accordion Item #1 </h2>
+          <div
+            id="lokiItem1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#lokiAccordion"
+          >
+            <div class="accordion-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam inventore in
+              unde aspernatur exercitationem. Sed magni odit ut porro! Impedit sapiente dignissimos nihil corporis,
+              corrupti perspiciatis iure odio esse. </div>
+          </div>
+        </div>
+        <div class="accordion-item my-3 overflow-auto rounded-5 shadow-sm">
+          <h2
+            class="accordion-header accordion-button collapsed btn"
+            data-bs-toggle="collapse"
+            data-bs-target="#lokiItem2"
+          ><i class="fa-regular fa-circle-question me-2"></i>Accordion Item #2 </h2>
+          <div
+            id="lokiItem2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#lokiAccordion"
+          >
+            <div class="accordion-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam inventore in
+              unde aspernatur exercitationem. Sed magni odit ut porro! Impedit sapiente dignissimos nihil corporis,
+              corrupti perspiciatis iure odio esse. </div>
+          </div>
+        </div>
+        <div class="accordion-item my-3 overflow-auto rounded-5 shadow-sm">
+          <h2
+            class="accordion-header accordion-button collapsed btn"
+            data-bs-toggle="collapse"
+            data-bs-target="#lokiItem3"
+          ><i class="fa-regular fa-circle-question me-2"></i>Accordion Item #3 </h2>
+          <div
+            id="lokiItem3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#lokiAccordion"
+          >
+            <div class="accordion-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam inventore in
+              unde aspernatur exercitationem. Sed magni odit ut porro! Impedit sapiente dignissimos nihil corporis,
+              corrupti perspiciatis iure odio esse. </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer class="bg-dark">
+    <div class="bg-light bg-opacity-25 p-3 mt-2">
+      hello
+    </div>
+    <div class="text-muted py-3 text-center">
+      <small class="container"> 泰山職業訓練中心課程教材編譯 <br>Copyright © 2022 <span class="text-white">洛奇數位設計</span>. all rights
+        reserved </small>
+    </div>
+  </footer>
+  <script src="plugin/custom.js"></script>
+</body>
+
+</html>

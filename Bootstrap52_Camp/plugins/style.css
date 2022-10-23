@@ -1,6 +1,37 @@
 body {
   font-family: "Roboto", "Noto Sans TC", "Open Sans", Helvetica, Arial;
-  background: #eee; /* 白底不要傷眼 */
+  background: #282c34;
+  color: #eee;
+}
+
+body > nav {
+  z-index: 9999;
+}
+#lokiMenu a.nav-link,
+#lokiMenu a.navbar-brand {
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+}
+
+#lokiMenu a.nav-link::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  border-radius: 50%;
+}
+
+#lokiMenu a.nav-link.active {
+  transform: scale(1.2);
+}
+
+#lokiSlider .carousel-item {
+  padding-bottom: 240px;
+  background: #282c34; /*轉場問題加底圖*/
+}
+
+#lokiSlider .carousel-caption {
+  padding-bottom: 120px;
 }
 
 #lokiSlider img {

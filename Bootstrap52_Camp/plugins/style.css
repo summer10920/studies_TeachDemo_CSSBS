@@ -36,7 +36,7 @@ body > nav {
 
 #lokiSlider img {
   object-fit: cover;
-  filter: grayscale(50%) sepia(80%);
+  /* filter: grayscale(50%) sepia(80%); */
 }
 
 #lokiSlider .carousel-item::after {

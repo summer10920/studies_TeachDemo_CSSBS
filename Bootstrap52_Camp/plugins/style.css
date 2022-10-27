@@ -61,8 +61,12 @@ body > nav {
   z-index: 1;
 }
 
+#lokiPallet .row > img {
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
-  #lokiPallet .col:nth-child(odd) {
+  #lokiPallet article > .col:nth-child(odd) {
     transform: translateY(-50%);
     padding-bottom: 150px;
   }
@@ -70,7 +74,7 @@ body > nav {
     padding-top: calc((50% - 24px) * 0.375 + 75px);
     margin-bottom: -150px;
   }
-  #lokiPallet .col:nth-last-child(1) {
+  #lokiPallet article > .col:nth-last-child(1) {
     margin-bottom: -150px;
   }
 
@@ -99,15 +103,16 @@ body > nav {
   }
   #lokiPark .col .card-img {
     opacity: 0.5;
+    filter: blur(2px);
     transition: 0.3s;
   }
   #lokiPark .col:hover .card-img {
     opacity: 1;
+    filter: blur(0);
   }
 }
 #lokiPark {
-  background: url("https://picsum.photos/1920/1800/?random=10"),
-    #fff8 no-repeat center/cover;
+  background: url("/media/imgs/parkBG.jpg") #3338 no-repeat center/cover;
   background-attachment: fixed;
   background-blend-mode: lighten;
 }
@@ -125,6 +130,13 @@ section:not(#lokiSlider) {
   background-attachment: fixed;
   background-blend-mode: darken;
 }
+
+#lokiService img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
 
 #lokiContact {
   background: url("https://picsum.photos/1920/1080/?random=10"),

@@ -102,13 +102,11 @@ body > nav {
     z-index: 99;
   }
   #lokiPark .col .card-img {
-    opacity: 0.5;
-    filter: blur(2px);
+    filter: brightness(0.7);
     transition: 0.3s;
   }
   #lokiPark .col:hover .card-img {
-    opacity: 1;
-    filter: blur(0);
+    filter: brightness(1);
   }
 }
 #lokiPark {
@@ -125,22 +123,19 @@ section:not(#lokiSlider) {
 }
 
 #lokiService {
-  background: url("https://picsum.photos/1920/1800/?random=11"),
-    #0008 no-repeat center/cover;
+  background: url("/media/imgs/parkBG.jpg") #0008 no-repeat center/cover;
   background-attachment: fixed;
   background-blend-mode: darken;
 }
 
-#lokiService img{
+#lokiService img {
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
 
-
 #lokiContact {
-  background: url("https://picsum.photos/1920/1080/?random=10"),
-    #000 no-repeat center/cover;
+  background: url("/media/imgs/contactBG.jpg") #000 no-repeat center/cover;
   background-attachment: fixed;
   background-blend-mode: luminosity;
 }

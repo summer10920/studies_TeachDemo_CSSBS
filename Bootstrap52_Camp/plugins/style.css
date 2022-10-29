@@ -110,7 +110,7 @@ body > nav {
   }
 }
 #lokiPark {
-  background: url("/media/imgs/parkBG.jpg") #3338 no-repeat center/cover;
+  background: url("../media/imgs/parkBG.jpg") #3338 no-repeat center/cover;
   background-attachment: fixed;
   background-blend-mode: lighten;
 }
@@ -123,7 +123,7 @@ section:not(#lokiSlider) {
 }
 
 #lokiService {
-  background: url("/media/imgs/parkBG.jpg") #0008 no-repeat center/cover;
+  background: url("../media/imgs/parkBG.jpg") #0008 no-repeat center/cover;
   background-attachment: fixed;
   background-blend-mode: darken;
 }
@@ -135,7 +135,7 @@ section:not(#lokiSlider) {
 }
 
 #lokiContact {
-  background: url("/media/imgs/contactBG.jpg") #000 no-repeat center/cover;
+  background: url("../media/imgs/contactBG.jpg") #000 no-repeat center/cover;
   background-attachment: fixed;
   background-blend-mode: luminosity;
 }
